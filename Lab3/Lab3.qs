@@ -12,7 +12,7 @@ namespace Lab3 {
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Math;
-        open Microsoft.Quantum.Diagnostics;
+    open Microsoft.Quantum.Diagnostics;
 
     /// # Summary
     /// In this exercise, you are given two qubits. Both qubits are in
@@ -302,8 +302,21 @@ namespace Lab3 {
     /// ## register
     /// A two-qubit register in the |00> state.
     operation Challenge1 (register : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+        //Get initial state
+        //basically want Qubit 0 to have 66% chance 0 and 33% chance 1
+        //probability is amplitude squared so we want to generate sqrt(2/3) amplitude on term
+        //to get angle to shift arccos() can be used to return angle which must be 2x because of two term quantum state on Qubit 0 
+        //To do this have to rotate qubit across Ry
+        Ry(2.0* ArcCos(Sqrt(2.0/3.0)), register[0]);
+
+        //after that just zero control to break 66%  into two separate states of equal prob
+        X(register[0]);
+        Controlled H([register[0]], register[1]);
+        X(register[0]);
+        DumpRegister((),register);
+
+
+
     }
 
 
@@ -320,8 +333,16 @@ namespace Lab3 {
     /// ## register
     /// A three-qubit register in the |000> state.
     operation Challenge2 (register : Qubit[]) : Unit {
-        // TODO
-        fail "Not implemented.";
+        //same logic as above to generate .333 prob for each term
+        Ry(2.0* ArcCos(Sqrt(2.0/3.0)), register[0]);
+        //going to 0 control H again to create 00 01 and 10 state properly
+        X(register[0]);
+        //then just a matter of CNOT 0 control off first qubit and 1 control (to reflip back to 0) on second qubit 
+        Controlled H([register[0]],register[1]);
+        CNOT(register[0],register[2]);
+        CNOT(register[1],register[2]);
+        X(register[0]);
+
     }
 
 
@@ -364,6 +385,9 @@ namespace Lab3 {
     /// faster than classical computers once we get to quantum algorithms, but
     /// this is a good first hint.
     operation Challenge3 (register : Qubit[]) : Unit {
+        //start by normalizing..
+        // total value of system shown is 2 + 2*sqrt(2) => 1 becomes 1/(1+sqrt(2)) and 1/sqrt(2) becomes (2-sqrt(2)/4)
+
         // TODO
         fail "Not implemented.";
     }
