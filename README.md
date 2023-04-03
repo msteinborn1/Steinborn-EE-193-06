@@ -33,4 +33,7 @@ Passed challenge problem 1, did not find solution to challenge problem 2 but did
 All answers were informed by Lecute 11 notes.
 
 ### Lab 7
-Lab 7 can befound in the /Lab6 directory. Outside of the included code, also found in that directory is a screen shot of the tests that pass after altering the original code given in the assignment handout (Tests_Passed.png).
+Lab 7 can befound in the /Lab7 directory. Outside of the included code, also found in that directory is a screen shot of the tests that pass after altering the original code given in the assignment handout (Tests-Passed.png).
+
+### Lab 8
+Lab 8 can befound in the /Lab8 directory. Outside of the included code, also found in that directory is a screen shot of the tests that pass after altering the original code given in the assignment handout (Tests-Passed.png).
