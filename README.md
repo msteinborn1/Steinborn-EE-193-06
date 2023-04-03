@@ -22,12 +22,15 @@ Lab 4 can befound in the /Lab4 directory. Outside of the included code, also fou
 
 All answers were informed by Lecute 8 notes.
 ### Lab 5
-Lab 4 can befound in the /Lab5 directory. Outside of the included code, also found in that directory is a screen shot of the tests that pass after altering the original code given in the assignment handout (Tests_Passed.png).
+Lab 5 can befound in the /Lab5 directory. Outside of the included code, also found in that directory is a screen shot of the tests that pass after altering the original code given in the assignment handout (Tests_Passed.png).
 
 All answers were informed by Lecute 9 notes.
 ### Lab 6
-Lab 4 can befound in the /Lab6 directory. Outside of the included code, also found in that directory is a screen shot of the tests that pass after altering the original code given in the assignment handout (Tests_Passed.png).
+Lab 6 can befound in the /Lab6 directory. Outside of the included code, also found in that directory is a screen shot of the tests that pass after altering the original code given in the assignment handout (Tests_Passed.png).
 
 Passed challenge problem 1, did not find solution to challenge problem 2 but did attempt the problem.
 
 All answers were informed by Lecute 11 notes.
+
+### Lab 7
+Lab 7 can befound in the /Lab6 directory. Outside of the included code, also found in that directory is a screen shot of the tests that pass after altering the original code given in the assignment handout (Tests_Passed.png).
