@@ -37,3 +37,6 @@ Lab 7 can befound in the /Lab7 directory. Outside of the included code, also fou
 
 ### Lab 8
 Lab 8 can befound in the /Lab8 directory. Outside of the included code, also found in that directory is a screen shot of the tests that pass after altering the original code given in the assignment handout (Tests-Passed.png).
+
+### Lab 9
+Lab 9 can befound in the /Lab9 directory. Outside of the included code, also found in that directory is a screen shot of the showing that the tests were performed but did not pass. despite quite a few hours of trying I could not get any of the provided exercises to perform as expected however I did truly try to implement them all.
